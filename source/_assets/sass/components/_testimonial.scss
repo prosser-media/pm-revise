@@ -1,0 +1,30 @@
+.testimonial {
+    margin: 40px 0;
+
+    &__content {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__author {
+        font-weight: 300;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin: 20px 0 0 0;
+        line-height: 0;
+        text-align: center;
+    }
+}
+
+@include min-w-md {
+    .testimonial {
+        margin: 70px 0;
+
+        &__content {
+            font-size: 22px;
+        }
+    }
+}

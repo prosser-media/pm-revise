@@ -1,0 +1,21 @@
+.get-revising-button {
+    display: block;
+    margin: 40px 0;
+    background-color: $secondary;
+    text-align: center;
+    color: $white;
+    font-size: 24px;
+    padding: 40px 0;
+    text-decoration: none;
+
+    &:hover {
+        color: $lightgrey;
+    }
+}
+
+@include min-w-md {
+    .get-revising-button {
+        margin: 70px 0 40px 0;
+        font-size: 30px;
+    }
+}

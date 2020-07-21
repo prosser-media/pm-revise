@@ -1,0 +1,33 @@
+@mixin min-w-sm {
+    @media (min-width: 640px) {
+        @content;
+    }
+}
+
+@mixin min-w-md {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin min-w-lg {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin max-w-lg {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin min-w-xl {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin transition-default {
+    transition: all 0.3s ease-in-out;
+}

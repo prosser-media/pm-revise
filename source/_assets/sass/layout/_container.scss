@@ -1,0 +1,27 @@
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    &--narrow {
+        max-width: 850px;
+    }
+}
+
+@include min-w-md {
+    .container--narrow {
+        max-width: 524px;
+    }
+}
+
+@media (min-width: 850px) {
+    .container--narrow {
+        max-width: 700px;
+    }
+}
+
+@include min-w-lg {
+    .container--narrow {
+        max-width: 850px;
+    }
+}

@@ -1,0 +1,60 @@
+.home-feature {
+    margin: 40px 0;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        place-items: center;
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 43px;
+        letter-spacing: -10;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__text-content {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: -10;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    &__illustration {
+        img {
+            height: 250px;
+        }
+    }
+}
+
+@include min-w-md {
+    .home-feature {
+        margin: 70px 0;
+
+        &__content {
+            grid-template-columns: 1fr 250px;
+        }
+
+        &__heading {
+            text-align: left;
+            font-size: 57px;
+            line-height: 60px;
+        }
+
+        &__text-content {
+            text-align: left;
+        }
+
+        &__illustration {
+            img {
+                width: 250px;
+            }
+        }
+    }
+}
